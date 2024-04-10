@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plan Hub - We Got You</title>
+    <link rel="icon" href="{% static 'home/logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'home/sign_up.css' %}">
+   
+</head>
+
+<body>
+    <div class="container">
+        <a class="Back-button" onclick="window.history.back();" style="text-decoration: none;">
+            <img width="40px" src="{% static 'tasks/arrow-left.svg' %}">
+        </a>
+        <h1>Plan Hub</h1>
+        <h2>We Got You</h2>
+        <form action="">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            
+            <label for="password_confirmation">Password Confirmation:</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+            <a href="{% url 'dashboard' %}" class="signup-button" 
+            style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #0a6b0f; color: #ffffff; border: none; 
+            border-radius: 5px; cursor: pointer; text-align: center;">Sign Up</a>
+
+        </form>
+        
+        
+    </div>
+    
+
+</html>
